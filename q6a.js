@@ -117,8 +117,6 @@ function onLocationFound(e) {
 
 map.on('locationfound', onLocationFound);
 
-Excellent! But it would also be nice to show an error message if the geolocation failed:
-
 function onLocationError(e) {
     alert(e.message);
 }
