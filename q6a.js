@@ -24,13 +24,13 @@ var center = [14.64902, 121.06335];
 // Create the map
 var map = L.map('map', {
   closePopupOnClick: false
-}).setView(center, 19);
+}).setView(center, 15);
 
  
 // Set up the OSM layer
 L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    minZoom: 18,
+    minZoom: 15,
     maxZoom: 20
   }).addTo(map);
 
