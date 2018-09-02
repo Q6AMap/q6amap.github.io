@@ -1,3 +1,23 @@
+function onLocationFound(e) {
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within this point").openPopup();
+	L.polyline([
+		e.latlng,
+		[14.64812, 121.06359]
+	], {
+	  color: 'cyan',
+	  weight: 2,
+	  opacity: .2,
+	  lineJoin: 'round'
+	}).addTo(map);
+}
+
+
+function onLocationError(e) {
+    alert(e.message);
+}
+
+
 // center of the map
 var center = [14.64902, 121.06335];
 
@@ -101,24 +121,6 @@ var polyline = L.polyline([
   lineJoin: 'round'
 }).addTo(map);
 
-function onLocationFound(e) {
-    L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within this point").openPopup();
-	L.polyline([
-		e.latlng,
-		[14.64812, 121.06359]
-	], {
-	  color: 'cyan',
-	  weight: 2,
-	  opacity: .2,
-	  lineJoin: 'round'
-	}).addTo(map);
-}
-
 map.on('locationfound', onLocationFound);
-
-function onLocationError(e) {
-    alert(e.message);
-}
 
 map.on('locationerror', onLocationError);
