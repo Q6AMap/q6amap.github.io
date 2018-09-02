@@ -25,10 +25,7 @@ var map = L.map('map', {
 }).setView(center, 18);
 
 // Set up the OSM layer
-L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 20
-  }).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 var myIcon = L.divIcon({
   className: 'my-div-icon'
