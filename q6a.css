@@ -1,6 +1,12 @@
-#map {
-  height: 100vh;
+body {
+    padding: 0;
+    margin: 0;
 }
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}
+
 
 #my-div-icon {
   opacity: 0.01;
