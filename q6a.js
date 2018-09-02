@@ -6,6 +6,7 @@ var map = L.map('map', {
   closePopupOnClick: false
 }).setView(center, 19);
 
+ 
 // Set up the OSM layer
 L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -99,3 +100,5 @@ var polyline = L.polyline([
   dashArray: '20,15',
   lineJoin: 'round'
 }).addTo(map);
+
+map.locate({setView: true, maxZoom: 16});
