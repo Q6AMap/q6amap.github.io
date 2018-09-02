@@ -28,7 +28,6 @@ var map = L.map('map', {
 // Set up the OSM layer
 L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    minZoom: 15,
     maxZoom: 20
   }).addTo(map);
 
