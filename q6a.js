@@ -6,8 +6,8 @@ function onLocationFound(e) {
 		[14.64812, 121.06359]
 	], {
 	  color: 'cyan',
-	  weight: 2,
-	  opacity: .2,
+	  weight: 5,
+	  opacity: .7,
 	  lineJoin: 'round'
 	}).addTo(map);
 }
